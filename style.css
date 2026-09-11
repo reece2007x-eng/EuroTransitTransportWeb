@@ -1,0 +1,61 @@
+:root {
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #0f172a;
+  color: #e5e7eb;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+/* Titles */
+h1, h2 {
+  font-family: var(--font-title);
+  letter-spacing: 0.05em;
+}
+
+.section-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.section-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Button */
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
