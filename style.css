@@ -1,17 +1,50 @@
 :root {
   --font-title: 'Montserrat', sans-serif;
   --font-body: 'Roboto', sans-serif;
+  --blue: #2563eb;
+  --dark: #0f172a;
+  --light: #e5e7eb;
 }
 
 body {
   font-family: var(--font-body);
-  background: #0f172a;
-  color: #e5e7eb;
+  background: var(--dark);
+  color: var(--light);
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
-/* Banner */
+/* NAVIGATION */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  padding: 15px 30px;
+}
+
+.nav-logo {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+
+/* BANNER */
 .banner {
   width: 100%;
   display: flex;
@@ -25,31 +58,48 @@ body {
   border-radius: 10px;
 }
 
-/* Titles */
-h1, h2 {
-  font-family: var(--font-title);
-  letter-spacing: 0.05em;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
 
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* SECTIONS */
 .section-title {
+  font-family: var(--font-title);
   font-size: 2rem;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin: 40px 20px 10px;
+}
+
+.sub-title {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  margin: 20px 20px 10px;
 }
 
 .section-body {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 800px;
+  margin: 0 20px 20px;
 }
 
-/* Button */
+/* BUTTON */
 button {
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 10px 20px;
   font-family: var(--font-body);
-  font-size: 1rem;
-  background: #2563eb;
+  background: var(--blue);
   color: white;
   border: none;
   border-radius: 6px;
@@ -58,4 +108,12 @@ button {
 
 button:hover {
   background: #1e40af;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e293b;
+  margin-top: 40px;
 }
